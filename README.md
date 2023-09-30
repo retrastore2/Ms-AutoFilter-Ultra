@@ -79,7 +79,7 @@ You can deploy this bot anywhere.
 <details><summary>𝘿𝙚𝙥𝙡𝙤𝙮 𝙏𝙤 𝙃𝙚𝙧𝙤𝙠𝙪</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/mrmalikoffl/MsFilmFactoryV2">
+<a href="https://heroku.com/deploy?template=https://github.com/retrastore2/Ms-AutoFilter-Ultra">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
