@@ -12,26 +12,26 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/MsFilmFactory_Bot')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/Pwofese_Bot')
     START_TXT = environ.get("START_TXT", '''Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I have more than 1 million files to serve you \n\nKeep Support Me''')
+Myself <a href=https://t.me/{}>{}</a>,\n\nFais-moi confiance ! J'ai plus d'un million de fichiers à vous servir \n\nContinuez à me soutenir''')
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """
-╔════❰ MS FILM FACTORY ❱═❍⊱❁۪۪
+╔════❰ vσtrє prσfєsσr ❱═❍⊱❁۪۪
 ║ ┏━━━━━━━━━━━━━━━➣
-║ ┣⪼ 𝙼𝚈 𝙽𝙰𝙼𝙴: {Profesor}
-║ ┣⪼ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: ✨ <a href=https://t.me/zosman_official>zoѕ-мan</a> ✨
+║ ┣⪼ 𝙼𝙾𝙽 𝙽𝙾𝙼: {𝐏𝐑𝐎𝐅𝐄𝐒𝐎𝐑}
+║ ┣⪼ 𝙲𝚁𝙴𝙰𝚃𝙴𝚄𝚁: ✨ <a href=https://t.me/zosman_official>✪ zoѕ-мan ✪</a> ✨
 ║ ┣⪼ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ║ ┣⪼ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ║ ┣⪼ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-║ ┣⪼ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: KOYEB
+║ ┣⪼ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ║ ┣⪼ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ BETA ]
 ║ ┗━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁"""
     SOURCE_TXT = """<b>Profesor est un Projet Open Source.</b>
 
-Vous pouvez demandez le lien de prise en charge gratuitement ci-dessous 👇👇 Source Star Team- <a href='https://t.me/Cinemalakay_group'>ZosMan</a>"""
+Vous pouvez facilement obtenir son code source depuis github - <a href='https://t.me/Cinemalakay_group'>✪ zoѕ-мan ✪</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
