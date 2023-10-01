@@ -23,7 +23,7 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/68d28011b2bc356b5db01.png')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/3f03b8c300ca96058eb58.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -46,9 +46,9 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [TN 68 FILM FACTORY](https://t.me/TN68_FilmFactory)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [TN 68 FILM FACTORY](https://t.me/TN68_FilmFactory)</b> ↭  🔥")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "⚡<b>File uploaded by [TN 68 FILM FACTORY](https://t.me/TN68_FilmFactory)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [TN 68 FILM FACTORY](https://t.me/TN68_FilmFactory)</b> ↭  🔥")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb: \n\n🏷 Title: {title}\n🌟 Rating : {rating}/10\n🎭 Genres: {genres}\n📆 Year: {year}\n⏰ Duration : {runtime}\n🎙️ Languages : {languages}\n🔖 Plot : {plot}\n\n♥️ Thanks for using me ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [𝐒𝐭𝐚𝐫+ 𝐋𝐢𝐬𝐭𝐞 𝐝𝐞 𝐅𝐢𝐥𝐦𝐬](https://t.me/star_film_posters)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [𝐒𝐭𝐚𝐫+ 𝐋𝐢𝐬𝐭𝐞 𝐝𝐞 𝐅𝐢𝐥𝐦𝐬](https://t.me/cinemalakay)</b> ↭  🔥")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "⚡<b>File uploaded by [𝐒𝐭𝐚𝐫+ 𝐋𝐢𝐬𝐭𝐞 𝐝𝐞 𝐒é𝐫𝐢𝐞𝐬](https://t.me/cinemalakay)</b>⚡\n\nName: {file_caption} \n\n⚙️ <b>Size: </b><code>{file_size}</code>🔥  ↭ <b>Join Now [𝐒𝐭𝐚𝐫+ 𝐋𝐢𝐬𝐭𝐞 𝐝𝐞 𝐒é𝐫𝐢𝐞𝐬](https://t.me/star_film_posters)</b> ↭  🔥")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb: \n\n🍿🎥 Titre : {title}\n🌟 IMDB : {rating}/10\n🎭 Genres: {genres}\n📆 Année : {year}\n⏰ Duration : {runtime}\n👄 Languages : {languages}\n💬 Synopsis : {plot}\n\n♥️ Thanks for using me ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -83,10 +83,10 @@ if SELF_DELETE == "True":
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/Tn68_tutorials/3"
+DOWNLOAD_TEXT_URL = "https://t.me/trailer_cinemalakay"
 
    # Custom Caption Under Button #
-CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/TN68_FilmFactory"
+CAPTION_BUTTON = "Les Nouvelles"
+CAPTION_BUTTON_URL = "https://t.me/StarPlus_Cinema"
 
    # Auto Delete For Bot Sending Files #
