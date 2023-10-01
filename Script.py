@@ -20,18 +20,18 @@ Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I have more than 1 million 
     ABOUT_TXT = """
 ╔════❰ MS FILM FACTORY ❱═❍⊱❁۪۪
 ║ ┏━━━━━━━━━━━━━━━➣
-║ ┣⪼ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-║ ┣⪼ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: ✨ <a href=https://t.me/mrmalik_offl>Mr Malik</a> ✨
+║ ┣⪼ 𝙼𝚈 𝙽𝙰𝙼𝙴: {Profesor}
+║ ┣⪼ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: ✨ <a href=https://t.me/zosman_official>zoѕ-мan</a> ✨
 ║ ┣⪼ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ║ ┣⪼ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ║ ┣⪼ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ║ ┣⪼ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: KOYEB
-║ ┣⪼ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ MS FILM FACTORY ]
+║ ┣⪼ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ BETA ]
 ║ ┗━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁"""
-    SOURCE_TXT = """<b>Ms Film Factory is an open source project</b>
+    SOURCE_TXT = """<b>Profesor est un Projet Open Source.</b>
 
-You can easily get its source code from github - <a href='https://github.com/mrmalikoffl/MsFilmFactoryV2'>Mr Malik</a>"""
+Vous pouvez demandez le lien de prise en charge gratuitement ci-dessous 👇👇 Source Star Team- <a href='https://t.me/Cinemalakay_group'>ZosMan</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
@@ -56,7 +56,7 @@ You can easily get its source code from github - <a href='https://github.com/mrm
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/LazyDeveloper)</code>
+<code>[ZOS-MAN](buttonurl:https://t.me/zosman_official)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
