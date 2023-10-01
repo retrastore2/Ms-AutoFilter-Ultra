@@ -13,10 +13,10 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/Pwofese_Bot')
-    START_TXT = environ.get("START_TXT", '''Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nFais-moi confiance ! J'ai plus d'un million de fichiers à vous servir \n\nContinuez à me soutenir''')
+    START_TXT = environ.get("START_TXT", '''Salut👋 {},
+MON NOM EST <a href=https://t.me/{Profesor}>{2.0}</a>,\n\nFais-moi confiance ! J'ai plus d'un million de fichiers à vous servir \n\nAjoute-moi dans ton groupe et regarde la magie s'opèrer ou suis simplement les instructions dans le menu.\n\nContinuez à me soutenir''')
     HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+𝚅𝙾𝙸𝙲𝙸 𝙻’𝙰𝙸𝙳𝙴 𝙿𝙾𝚄𝚁 𝙼𝙴𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝙴𝚂."""
     ABOUT_TXT = """
 ╔════❰ vσtrє prσfєsσr ❱═❍⊱❁۪۪
 ║ ┏━━━━━━━━━━━━━━━➣
