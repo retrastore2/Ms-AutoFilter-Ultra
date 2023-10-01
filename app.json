@@ -1,8 +1,8 @@
 {
-    "name": "MsFilmFactoryV2",
-    "description": "Ms Film Factory with Url Shortner",
+    "name": "𝗣𝗥𝗢𝗙𝗘𝗦𝗢𝗥",
+    "description": "𝗣𝗥𝗢𝗙𝗘𝗦𝗢𝗥 Factory with Url Shortner",
     "stack": "container",
-    "logo": "https://telegra.ph/file/8c5b584dd3f9b2ed31d87.jpg",
+    "logo": "https://telegra.ph/file/94ce063e0bfa6c8cf5f01.jpg",
     "keywords": [
       "telegram",
       "auto-filter",
@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/mrmalikoffl/MsFilmFactoryV2",
-    "repository": "https://github.com/mrmalikoffl/MsFilmFactoryV2",
+    "website": "https://github.com/retrastore2",
+    "repository": "https://github.com/retrastore2/zosman",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
