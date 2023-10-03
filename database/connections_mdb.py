@@ -8,7 +8,7 @@ logger.setLevel(logging.ERROR)
 
 myclient = pymongo.MongoClient(DATABASE_URI)
 mydb = myclient[DATABASE_NAME]
-mycol = mydb['CONNECTION']   
+mycol = mydb['CONNEXION']   
 
 
 async def add_connection(group_id, user_id):
@@ -36,7 +36,7 @@ async def add_connection(group_id, user_id):
             mycol.insert_one(data)
             return True
         except:
-            logger.exception('Some error occurred!', exc_info=True)
+            logger.exception('Une erreur s'est produite !', exc_info=True)
 
     else:
         try:
@@ -49,7 +49,7 @@ async def add_connection(group_id, user_id):
             )
             return True
         except:
-            logger.exception('Some error occurred!', exc_info=True)
+            logger.exception('Une erreur s'est produite!', exc_info=True)
 
         
 async def active_connection(user_id):
@@ -128,6 +128,6 @@ async def delete_connection(user_id, group_id):
             )
         return True
     except Exception as e:
-        logger.exception(f'Some error occurred! {e}', exc_info=True)
+        logger.exception(f'Une erreur s'est produite ! {e}', exc_info=True)
         return False
 
