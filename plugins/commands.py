@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton('⚡ CINÉMA ⚡', url=f"https://telegram.me/StarPlus_Cinema"),
             InlineKeyboardButton('🔔 LES NOUVELLES 🔔', url='https://t.me/StarPlus_Cinéma')
             ],[
-             InlineKeyboardButton('ℹ️' AIDES, callback_data='help'),
+             InlineKeyboardButton('ℹ️ AIDES ', callback_data='help'),
             InlineKeyboardButton('♥️ À PROPOS ♥️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
