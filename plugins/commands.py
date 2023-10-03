@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/+rN9QCFgIihgyZWM1')
+                InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/StarPlus_Cinema')
             ],
             [
-                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/TN68_FilmFactory"),
+                InlineKeyboardButton('⚡ Mises à jour du film ⚡', url=f"https://telegram.me/Starplus_Cinema"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -45,13 +45,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕↖️ AJOUTEZ-MOI À VOS GROUPES ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/TN68_FilmFactory"),
-            InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/+rN9QCFgIihgyZWM1')
+            InlineKeyboardButton('⚡ CINÉMA ⚡', url=f"https://telegram.me/StarPlus_Cinema"),
+            InlineKeyboardButton('🔔 LES NOUVELLES 🔔', url='https://t.me/StarPlus_Cinema')
             ],[
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+             InlineKeyboardButton('ℹ️ AIDES ', callback_data='help'),
+            InlineKeyboardButton('♥️ À PROPOS ♥️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -65,12 +65,12 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
-            logger.error("Make sure Bot is admin in Force Sub channel")
+            logger.error("Assurez-vous que Bot est administrateur dans le canal Force Sub.")
             return
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 Join Updates Channel 🔥", url=invite_link.invite_link
+                    "🔥 Rejoignez la chaîne de mises à jour 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -79,25 +79,25 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton(" 🔄 Réessayez", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" 🔄 Réessayez", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Veuillez rejoindre mon canal pour utiliser ce bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕↖️ AJOUTEZ-MOI À VOS GROUPES ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Movie Updates ⚡', url=f"https://telegram.me/TN68_FilmFactory"),
-            InlineKeyboardButton('🔔 BOT Updates 🤖', url='https://t.me/+rN9QCFgIihgyZWM1')
+            InlineKeyboardButton('⚡ CINÉMA ⚡', url=f"https://telegram.me/StarPlus_Cinema"),
+            InlineKeyboardButton('🔔 LES NOUVELLES 🔔', url='https://t.me/StarPlus_Cinéma')
             ],[
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+             InlineKeyboardButton('ℹ️' AIDES, callback_data='help'),
+            InlineKeyboardButton('♥️ À PROPOS ♥️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -124,7 +124,7 @@ async def start(client, message):
                     msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
-                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+                return await client.send_message(LOG_CHANNEL, "IMPOSSIBLE D'OUVRIR LE FICHIER.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
         for msg in msgs:
