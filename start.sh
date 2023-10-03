@@ -9,5 +9,5 @@ else
 fi
 cd /LazyPrincessV2
 pip3 install -U -r requirements.txt
-echo "Starting Bot...."
+echo "Démarrage du robot...."
 python3 bot.py
