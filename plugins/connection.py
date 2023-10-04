@@ -42,7 +42,7 @@ async def addconnection(client, message):
     except Exception as e:
         logger.exception(e)
         await message.reply_text(
-            "Invalid Group ID!\n\nIf correct, Make sure I'm present in your group!!",
+            "Invalid Group ID!\n\nSi c'est correct, assurez-vous que je suis présent dans votre groupe!!",
             quote=True,
         )
 
@@ -68,14 +68,14 @@ async def addconnection(client, message):
                     )
             else:
                 await message.reply_text(
-                    "You're already connected to this chat!",
+                    "Vous êtes déjà connecté à ce chat!",
                     quote=True
                 )
         else:
-            await message.reply_text("Add me as an admin in group", quote=True)
+            await message.reply_text("Ajoutez-moi en tant qu'administrateur dans le groupe", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('Some error occurred! Try again later.', quote=True)
+        await message.reply_text('Une erreur s'est produite! Réessayez plus tard.', quote=True)
         return
 
 
@@ -102,9 +102,9 @@ async def deleteconnection(client, message):
 
         delcon = await delete_connection(str(userid), str(group_id))
         if delcon:
-            await message.reply_text("Successfully disconnected from this chat", quote=True)
+            await message.reply_text("Déconnexion réussie de ce chat", quote=True)
         else:
-            await message.reply_text("This chat isn't connected to me!\nDo /connect to connect.", quote=True)
+            await message.reply_text("Ce chat ne m'est pas connecté!\nDo /connect to connect.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
