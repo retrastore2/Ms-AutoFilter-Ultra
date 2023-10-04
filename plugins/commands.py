@@ -230,7 +230,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('Aucun fichier de ce type n'existe pas.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -306,7 +306,7 @@ async def delete(bot, message):
         if media is not None:
             break
     else:
-        await msg.edit('This is not supported file format')
+        await msg.edit('Ce format de fichier n'est pas pris en charge')
         return
     
     file_id, file_ref = unpack_new_file_id(media.file_id)
