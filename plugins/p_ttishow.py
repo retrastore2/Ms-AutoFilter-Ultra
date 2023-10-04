@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('COMMENT M'UTILISER', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 SUPPORT 📢', url='https://t.me/trailer_cinemalakay')
+            InlineKeyboardButton('ℹ️ AIDES ', url='https://t.me/cinemalakay_group')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -55,9 +55,9 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
-                                                 caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\nFind Any Media ! if you need any movie then then enter the movie name + years. 👍\n\nGuys Enter Only movie Or Webseries Name like This 👇\nVarisu ✅\nVarisu 2023 ✅\nVarisu in Tamil ❌\nFall ✅\nFall S01 ✅\nFall all season ❌</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥  ↭ Main Channel ↭  🔥', url='http://t.me/TN68_FilmFactory') ],
-                                                                                      [ InlineKeyboardButton('🔥  ↭ DEV Channel ↭  🔥', url='https://t.me/+rN9QCFgIihgyZWM1') ]
+                                                 caption=f'<b>ʜᴇʏ, {u.mention} SALUT👋🏻 BIENVENUE DANS NOTRE GROUPE {message.chat.title}\n\nTrouvez n'importe quel média! si vous avez besoin d'un film, entrez le nom du film + les années. 👍\n\nGuys, Entrez uniquement le nom du film ou de la websérie comme celui-ci 👇\nThe Equalizer ✅\nThe Nun 2023 ✅\nThe Expendables ❌\nFall ✅\nFall S01 ✅\nFall toute la saison ❌</b>',
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥  ↭ Channel Principale ↭  🔥', url='http://t.me/cinemalakay') ],
+                                                                                      [ InlineKeyboardButton('🔥  ↭ DEV Channel ↭  🔥', url='https://t.me/star_film_posters') ]
                                                                                     ] )
                 )
 
@@ -77,7 +77,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Hello Friends, \nMon administrateur m'a dit de quitter le groupe alors j'y vais ! Si vous souhaitez m'ajouter à nouveau, contactez mon groupe de support.</b>',
             reply_markup=reply_markup,
         )
 
