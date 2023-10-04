@@ -54,7 +54,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
-                video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
+                video="https://telegra.ph/file/0aafe0aad0ecf89434019.mp4",                                               
                                                  caption=f'<b>ʜᴇʏ, {u.mention} SALUT👋🏻 BIENVENUE DANS NOTRE GROUPE {message.chat.title}\n\nTrouvez n'importe quel média! si vous avez besoin d'un film, entrez le nom du film + les années. 👍\n\nGuys, Entrez uniquement le nom du film ou de la websérie comme celui-ci 👇\nThe Equalizer ✅\nThe Nun 2023 ✅\nThe Expendables ❌\nFall ✅\nFall S01 ✅\nFall toute la saison ❌</b>',
                                                  reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔥  ↭ Channel Principale ↭  🔥', url='http://t.me/cinemalakay') ],
                                                                                       [ InlineKeyboardButton('🔥  ↭ DEV Channel ↭  🔥', url='https://t.me/star_film_posters') ]
@@ -116,7 +116,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMon administrateur m'a dit de quitter le groupe alors j'y vais ! Si vous souhaitez m'ajouter à nouveau, contactez mon groupe de support.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -176,7 +176,7 @@ async def gen_invite(bot, message):
 
 @Client.on_message(filters.command('ban') & filters.user(ADMINS))
 async def ban_a_user(bot, message):
-    # https://t.me/GetTGLink/4185
+    # https://t.me/star_plus02/4185
     if len(message.command) == 1:
         return await message.reply('Give me a user id / username')
     r = message.text.split(None)
@@ -243,7 +243,7 @@ async def unban_a_user(bot, message):
     
 @Client.on_message(filters.command('users') & filters.user(ADMINS))
 async def list_users(bot, message):
-    # https://t.me/GetTGLink/4184
+    # https://t.me/star_plus02/4184
     raju = await message.reply('Getting List Of Users')
     users = await db.get_all_users()
     out = "Users Saved In DB Are:\n\n"
