@@ -1,2 +1,2 @@
- heroku-retrastore2
-heroku/phyton
+##MS-TAMIL-BOTZ
+python-3.10.8
