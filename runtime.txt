@@ -1,2 +1,2 @@
 ##MS-TAMIL-BOTZ
-Python 3.12.0
+python-3.11.6
