@@ -64,6 +64,11 @@
             "value": "",
             "required": false
         },
+        "ABOUT_TXT": {
+            "description": "Creator Name or Username ",
+            "value": "About_Text",
+            "required": true
+        },
         "DATABASE_URI": {
             "description": "Mongodb from https://youtu.be/gBLTsH-IXr0",
             "value": ""
